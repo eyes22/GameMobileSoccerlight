@@ -1,0 +1,65 @@
+﻿<ResourceDictionary
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:Soccerlight.Controls;assembly=Soccerlight.Controls">
+
+    <!--GreenButton-->
+    <Style x:Key="GreenButtonStyle" TargetType="local:GreenButton">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:GreenButton">
+                    <Grid Background="Red">
+                        <Grid Width="64" Height="64" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="32"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid Width="36" Height="36">
+                                <Grid.Background>
+                                    <RadialGradientBrush Center="0.5, 0.5" RadiusX="0.9" RadiusY="0.9">
+                                        <GradientStopCollection>
+                                            <GradientStop Offset="0.0" Color="#ff202020"/>
+                                            <GradientStop x:Name="glowingGradientStop" Offset="0.4" Color="#ff202020"/>
+                                            <GradientStop Offset="0.6" Color="#ff202020"/>
+                                            <GradientStop Offset="1.0" Color="#ff202020"/>
+                                        </GradientStopCollection>
+                                    </RadialGradientBrush>
+                                </Grid.Background>
+                                <Ellipse Stroke="#ff008D00" StrokeThickness="1" Margin="5"/>
+                                <Ellipse Stroke="#80A0C6A5" StrokeThickness="2" Margin="5.5"/>
+                                <Ellipse Stroke="#ffA0C6A5" StrokeThickness="1" Margin="6"/>
+                                <Ellipse Stroke="#8056AB61" StrokeThickness="2" Margin="6.5"/>
+                                <Ellipse Margin="7">
+                                    <Ellipse.Fill>
+                                        <SolidColorBrush x:Name="greenFill" Color="#ff008D00"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <Ellipse Margin="11,7,11,23">
+                                    <Ellipse.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                            <GradientStop Color="#ffffffff" Offset="0.00"/>
+                                            <GradientStop x:Name="centralGradientStop" Color="#ff008D00" Offset="1.00"/>
+                                        </LinearGradientBrush>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                                <Ellipse Margin="9,19,9,7">
+                                    <Ellipse.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                            <GradientStop x:Name="centralGradientStop21" Color="#ff008D00" Offset="0.00"/>
+                                            <GradientStop x:Name="centralGradientStop22" Color="#ff008D00" Offset="0.50"/>
+                                            <GradientStop x:Name="centralGradientStop23" Color="#ff004000" Offset="1.00"/>
+                                        </LinearGradientBrush>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                            </Grid>
+                            <ContentPresenter Grid.Row="0" Margin="0,4,0,0" x:Name="contentPresenter" Content="{TemplateBinding ImageContent}" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="1.00"/>
+                            <TextBlock Grid.Row="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" Canvas.Top="32"  Text="{TemplateBinding Text}"/>
+                        </Grid>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

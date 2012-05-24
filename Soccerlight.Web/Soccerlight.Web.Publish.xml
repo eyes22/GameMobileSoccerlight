@@ -1,0 +1,15 @@
+<publishData>
+  <publishTarget publishUrl="C:\ftp.wikinet.net.br\httpdocs\Soccerlight\">
+    <file relUrl="Silverlight.js" publishTime="05/20/2010 01:05:50" />
+    <file relUrl="bin/Soccerlight.Web.pdb" publishTime="06/28/2010 20:15:02" />
+    <file relUrl="bin/Soccerlight.Web.dll" publishTime="06/28/2010 20:15:02" />
+    <file relUrl="Web.config" publishTime="05/20/2010 01:06:18" />
+    <file relUrl="Default.aspx" publishTime="05/20/2010 01:05:47" />
+    <file relUrl="SoccerlightTestPage.html" publishTime="06/25/2010 21:54:23" />
+    <file relUrl="ClientBin/Soccerlight.xap" publishTime="06/28/2010 20:18:40" />
+    <file relUrl="Soccerlight.html" publishTime="05/20/2010 01:05:49" />
+    <file relUrl="SoccerlightTestPage.aspx" publishTime="06/25/2010 21:54:27" />
+    <file relUrl="HTMLPage1.htm" publishTime="06/17/2010 01:00:54" />
+    <file relUrl="Soccerlight.aspx" publishTime="05/20/2010 01:05:50" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,246 @@
+﻿<view:BasePage x:Class="Soccerlight.View.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:lib="clr-namespace:Soccerlight.Controls;assembly=Soccerlight.Controls"             
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:view="clr-namespace:Soccerlight.View"          
+    mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="768">
+    <Border>
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Offset="0.00" Color="Black"/>
+                <GradientStop Offset="0.19" Color="DarkGreen"/>
+                <GradientStop Offset="0.20" Color="Green"/>
+                <GradientStop Offset="0.39" Color="Green"/>
+                <GradientStop Offset="0.40" Color="DarkGreen"/>
+                <GradientStop Offset="0.59" Color="DarkGreen"/>
+                <GradientStop Offset="0.60" Color="Green"/>
+                <GradientStop Offset="0.79" Color="Green"/>
+                <GradientStop Offset="0.80" Color="DarkGreen"/>
+                <GradientStop Offset="0.99" Color="Black"/>
+                <GradientStop Offset="1.00" Color="Black"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Grid>
+
+            <Grid x:Name="LayoutRoot" MouseLeftButtonUp="LayoutRoot_MouseLeftButtonUp" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="colLeftEscapeArea" Width="53"/>
+                    <ColumnDefinition x:Name="colLeftPosts" Width="53"/>
+                    <ColumnDefinition x:Name="colLeftGoalArea" Width="70"/>
+                    <ColumnDefinition x:Name="colLeftPenaltyArea" Width="280"/>
+                    <ColumnDefinition x:Name="colHalfWay" Width="280"/>
+                    <ColumnDefinition x:Name="colRightPenaltyArea" Width="70"/>
+                    <ColumnDefinition x:Name="colRightGoalArea" Width="53"/>
+                    <ColumnDefinition x:Name="colRightPosts" Width="53"/>
+                    <ColumnDefinition x:Name="colMenu" Width="32"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition x:Name="rowTopEscapeArea" Height="50"/>
+                    <RowDefinition x:Name="rowTopFieldLine" Height="108"/>
+                    <RowDefinition x:Name="rowTopPenaltyArea" Height="67"/>
+                    <RowDefinition x:Name="rowTopGoalArea" Height="153"/>
+                    <RowDefinition x:Name="rowBottomGoalArea" Height="67"/>
+                    <RowDefinition x:Name="rowBottomPenaltyArea" Height="108"/>
+                    <RowDefinition x:Name="rowBottomFieldLine" Height="50"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="8" Grid.RowSpan="1" Background="DarkGreen" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="5" Background="DarkGreen" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Border Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="5" BorderBrush="White" BorderThickness="2,2,0,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Border Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="5" BorderBrush="White" BorderThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Border Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderBrush="White" BorderThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,-20,0,-20"/>
+                <Border Grid.Column="6" Grid.Row="3" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderBrush="White" BorderThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,-20,0,-20"/>
+                <Border Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="3" BorderBrush="White" BorderThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Border Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="3" BorderBrush="White" BorderThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Border Grid.Column="5" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="3" BorderBrush="White" BorderThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Border Grid.Column="7" Grid.Row="1" Grid.ColumnSpan="1" Grid.RowSpan="5" Background="DarkGreen" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Border Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="8" Grid.RowSpan="1" Background="DarkGreen" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="5" Margin="8, 8, 0, 0" Opacity="0.50">
+                    <Image Source="../Images/Soccerlight.png" Stretch="UniformToFill">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="0.25" ScaleY="0.25"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </StackPanel>
+                <Grid Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="5" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="92"/>
+                        <ColumnDefinition Width="115"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="15"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="115"/>
+                        <ColumnDefinition Width="92"/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <Ellipse Grid.Column="0" Grid.Row="0" StrokeThickness="2" Stroke="White">
+                        <Ellipse.Clip>
+                            <RectangleGeometry Rect="15,15,30,30"/>
+                        </Ellipse.Clip>
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="-15" Y="-15"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Grid.Column="10" Grid.Row="0" StrokeThickness="2" Stroke="White">
+                        <Ellipse.Clip>
+                            <RectangleGeometry Rect="0,15,15,15"/>
+                        </Ellipse.Clip>
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="15" Y="-15"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Grid.Column="0" Grid.Row="6" StrokeThickness="2" Stroke="White">
+                        <Ellipse.Clip>
+                            <RectangleGeometry Rect="15,0,15,15"/>
+                        </Ellipse.Clip>
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="-15" Y="15"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Grid.Column="10" Grid.Row="6" StrokeThickness="2" Stroke="White">
+                        <Ellipse.Clip>
+                            <RectangleGeometry Rect="0,0,15,15"/>
+                        </Ellipse.Clip>
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="15" Y="15"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" StrokeThickness="2" Stroke="White"/>
+                    <Ellipse Grid.Column="5" Grid.Row="3" Fill="White"/>
+                    <Ellipse Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="1" Grid.RowSpan="3" StrokeThickness="2" Stroke="White">
+                        <Ellipse.Clip>
+                            <RectangleGeometry Rect="57.5,0,115,115"/>
+                        </Ellipse.Clip>
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="-57.5" Y="0"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Grid.Column="8" Grid.Row="2" Grid.ColumnSpan="1" Grid.RowSpan="3" StrokeThickness="2" Stroke="White">
+                        <Ellipse.Clip>
+                            <RectangleGeometry Rect="0,0,57.5,115"/>
+                        </Ellipse.Clip>
+                        <Ellipse.RenderTransform>
+                            <TranslateTransform X="57.5" Y="0"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                </Grid>
+                <Canvas x:Name="rootCanvas"/>
+                <Border Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderBrush="White" BorderThickness="2, 2, 4, 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Grid>
+                        <Grid.Background>
+                            <ImageBrush ImageSource="../Images/goalnet.png" Stretch="UniformToFill"/>
+                        </Grid.Background>
+                    </Grid>
+                </Border>
+                <Border Grid.Column="7" Grid.Row="3" Grid.ColumnSpan="1" Grid.RowSpan="1" BorderBrush="White" BorderThickness="2, 2, 4, 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Grid>
+                        <Grid.Background>
+                            <ImageBrush ImageSource="../Images/goalnet.png" Stretch="UniformToFill"/>
+                        </Grid.Background>
+                    </Grid>
+                </Border>
+                <Border x:Name="brdBallStrengthContainer" Grid.Column="8" Grid.Row="4" Grid.ColumnSpan="1" Grid.RowSpan="2" BorderBrush="White" Background="Black" CornerRadius="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" MouseLeftButtonUp="brdBallStrengthContainer_MouseLeftButtonUp">
+                    <Grid>
+                        <Border x:Name="brdStrength" CornerRadius="4" Margin="8,56,8,8">
+                            <Border.Background>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="Red" Offset="0.0"/>
+                                    <GradientStop Color="Orange" Offset="0.5"/>
+                                    <GradientStop Color="Yellow" Offset="1.0"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                        <Image x:Name="imgBallStrength" Source="../Images/Jabulani.png" VerticalAlignment="Top" Margin="0,32,0,0">
+                            <Image.RenderTransform>
+                                <RotateTransform x:Name="rtBallStrength" CenterX="11.5" CenterY="11.5" Angle="30">
+                                </RotateTransform>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Grid>
+                </Border>
+                <Grid x:Name="grdStadiumScreen" MaxWidth="800" MaxHeight="180" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="6" Grid.RowSpan="7" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Black" Visibility="Collapsed">
+                    <Grid.Clip>
+                        <RectangleGeometry Rect="0,0,800,180"/>
+                    </Grid.Clip>
+                    <TextBlock Foreground="White" FontSize="120" Text="GOALLLLLL!!!" TextAlignment="Center" Margin="0">
+                    <TextBlock.RenderTransform>
+                        <TranslateTransform x:Name="lettersXTranslate" X="0"/>
+                    </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <Image Source="../Images/mask.png" Stretch="Fill" Opacity="0.75"/>
+                    <Grid x:Name="grdBrightness" Background="Black" Opacity="1.00"/>
+                </Grid>
+                <Grid.RenderTransform>
+                    <ScaleTransform ScaleX="0.868" ScaleY="0.8700"/>
+                </Grid.RenderTransform>
+            </Grid>
+            <Grid x:Name="grdPlayerInfo" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Collapsed">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="8"/>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Border Margin="8,8,0,64" CornerRadius="8"  Width="75" Height="100" Background="#C0000000">
+                    <Border.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="4" Y="4"/>
+                        </TransformGroup>
+                    </Border.RenderTransform>
+                </Border>
+                <Border Margin="8,8,0,64" CornerRadius="8"  Width="75" Height="100">
+                    <Border.Background>
+                        <RadialGradientBrush>
+                            <GradientStop Offset="0.0" Color="#00000000"/>
+                            <GradientStop Offset="9.0" Color="#20000000"/>
+                            <GradientStop Offset="1.0" Color="#40000000"/>
+                        </RadialGradientBrush>
+                    </Border.Background>
+                    <Border.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="4" Y="4"/>
+                        </TransformGroup>
+                    </Border.RenderTransform>
+                </Border>
+                <Border Margin="8,8,0,64" CornerRadius="8"  Width="75" Height="100">
+                    <Border.Background>
+                        <ImageBrush x:Name="imgPlayer"/>
+                    </Border.Background>
+                </Border>
+                <StackPanel Grid.Column="2" VerticalAlignment="Center" Margin="0,0,0,64">
+                    <Border BorderBrush="Black" BorderThickness="2" CornerRadius="4">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <GradientStop Offset="0.0" Color="Yellow"/>
+                                <GradientStop Offset="0.5" Color="Yellow"/>
+                                <GradientStop Offset="0.5" Color="Gold"/>
+                                <GradientStop Offset="1.0" Color="Goldenrod"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Border.RenderTransform>
+                            <SkewTransform AngleX="-10"/>
+                        </Border.RenderTransform>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="numPlayer" Text="" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="32,0,0,0"/>
+                            <TextBlock Text=" - " Foreground="Black" FontSize="22" FontWeight="Bold"/>
+                            <TextBlock x:Name="txtPlayerName" Text="" Foreground="Black" FontSize="22" FontWeight="Bold" Margin="0,0,0,0"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</view:BasePage>

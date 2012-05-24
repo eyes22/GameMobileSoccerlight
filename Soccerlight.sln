@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soccerlight", "Soccerlight\Soccerlight.csproj", "{BFB43A9C-554A-4206-87C8-71D9C9A74602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soccerlight.Web", "Soccerlight.Web\Soccerlight.Web.csproj", "{1D40575C-8665-4DA6-80C2-BF7CE1FB4DFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soccerlight.Controls", "Soccerlight.Controls\Soccerlight.Controls.csproj", "{0B60D29C-A936-47AF-A76F-E25AD069D894}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soccerlight.Core", "Soccerlight.Core\Soccerlight.Core.csproj", "{F21F8BDD-6CF8-48ED-A22E-F53C4D3A596E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFB43A9C-554A-4206-87C8-71D9C9A74602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB43A9C-554A-4206-87C8-71D9C9A74602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB43A9C-554A-4206-87C8-71D9C9A74602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB43A9C-554A-4206-87C8-71D9C9A74602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D40575C-8665-4DA6-80C2-BF7CE1FB4DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D40575C-8665-4DA6-80C2-BF7CE1FB4DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D40575C-8665-4DA6-80C2-BF7CE1FB4DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D40575C-8665-4DA6-80C2-BF7CE1FB4DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B60D29C-A936-47AF-A76F-E25AD069D894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B60D29C-A936-47AF-A76F-E25AD069D894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B60D29C-A936-47AF-A76F-E25AD069D894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B60D29C-A936-47AF-A76F-E25AD069D894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F21F8BDD-6CF8-48ED-A22E-F53C4D3A596E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21F8BDD-6CF8-48ED-A22E-F53C4D3A596E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21F8BDD-6CF8-48ED-A22E-F53C4D3A596E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21F8BDD-6CF8-48ED-A22E-F53C4D3A596E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
